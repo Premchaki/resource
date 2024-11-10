@@ -1,0 +1,4 @@
+tomsolver provides CMake targets:
+
+  find_package(tomsolver CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE tomsolver::tomsolver)
