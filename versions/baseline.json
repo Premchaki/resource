@@ -7572,6 +7572,10 @@
       "baseline": "6.7.3",
       "port-version": 0
     },
+    "qtimgui": {
+      "baseline": "2022-12-10",
+      "port-version": 0
+    },
     "qtinterfaceframework": {
       "baseline": "6.7.3",
       "port-version": 0
