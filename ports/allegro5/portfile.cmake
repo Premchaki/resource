@@ -10,8 +10,8 @@ vcpkg_from_github(
         minimp3-fix.patch
 )
 
-if(VCPKG_TARGET_IS_ANDROID AND NOT ENV{ANDROID_HOME})
-    message(FATAL_ERROR "${PORT} requires environment variable ANDROID_HOME to be set." )
+if(VCPKG_TARGET_IS_ANDROID AND "$ENV{ANDROID_HOME}" STREQUAL "")
+    message(FATAL_ERROR "${PORT} requires environment variable ANDROID_HOME to be set.")
 endif()
 
 vcpkg_find_acquire_program(PKGCONFIG)
